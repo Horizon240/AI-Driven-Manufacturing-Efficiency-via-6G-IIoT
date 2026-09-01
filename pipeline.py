@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
 
 # Load Data
-df = pd.read_csv(r"C:\Users\kshit\Downloads\Thales_Group_Manufacturing.csv")
+df = pd.read_csv("Thales_Group_Manufacturing.csv")
 
 # Preprocessing
 le_mode = LabelEncoder()
