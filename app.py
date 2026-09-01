@@ -13,7 +13,7 @@ st.set_page_config(page_title="Smart Factory 6G Dashboard", layout="wide")
 # Load Data and Models 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\kshit\Downloads\Thales_Group_Manufacturing.csv")
+    df = pd.read_csv("Thales_Group_Manufacturing.csv")
     # Basic clean up for visual display
     df['Datetime'] = pd.to_datetime(df['Date'] + ' ' + df['Timestamp'], format='%d-%m-%Y %H:%M:%S')
     df = df.sort_values('Datetime')
