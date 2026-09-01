@@ -1,11 +1,11 @@
-# 🏭 Smart Factory 6G Dashboard: AI-Driven Manufacturing Efficiency
+# Smart Factory 6G Dashboard: AI-Driven Manufacturing Efficiency
 
-## 🎯 Strategic Objective
+## Strategic Objective
 As industrial sectors transition toward autonomous smart factories, the reliance on high-frequency Industrial IoT (IIoT) sensors and Ultra-Reliable Low-Latency Communication (URLLC) via 6G networks has introduced unprecedented data complexity. Traditional reactive dashboards fail to capture the immediate, non-linear impacts of network latency and sensor deviations on production output. This project provides a real-time predictive classification system to secure manufacturing efficiency and prevent cascading production losses.
 
 ---
 
-## 🏗️ Technical Solution & Architecture
+## Technical Solution & Architecture
 This repository contains an end-to-end machine learning pipeline that shifts factory monitoring from diagnostic (looking backward) to predictive (looking forward).
 
 ### 1. Data Integration
@@ -19,7 +19,7 @@ The predictive engine is deployed via an interactive Streamlit application, allo
 
 ---
 
-## ⚙️ Key Operational Capabilities
+## Key Operational Capabilities
 
 * **Automated State Detection:** Instantly alerts operators when production efficiency degrades due to interconnected hardware or network stress.
 * **Root-Cause Explainability:** Integrates SHAP (SHapley Additive exPlanations) to break the "black box" of machine learning. When efficiency drops, the system explicitly ranks the driving factors (e.g., a 40ms spike in 6G latency vs. a 15-degree temperature anomaly), enabling immediate, targeted maintenance.
@@ -27,7 +27,7 @@ The predictive engine is deployed via an interactive Streamlit application, allo
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 * **Core:** Python 3.13
 * **Data Processing:** Pandas, NumPy, Scikit-learn, Imbalanced-learn (SMOTE)
@@ -37,30 +37,30 @@ The predictive engine is deployed via an interactive Streamlit application, allo
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 **1. Clone the repository:**
-```bash
+```bash`
 git clone [https://github.com/yourusername/smart-factory-6g-dashboard.git](https://github.com/yourusername/smart-factory-6g-dashboard.git)
 cd smart-factory-6g-dashboard```
-Installation & Setup
+**Installation & Setup**
 Clone the repository:
 
-Bash
+```Bash`
 git clone https://github.com/yourusername/smart-factory-6g-dashboard.git
-cd smart-factory-6g-dashboard
+cd smart-factory-6g-dashboard```
 Install required dependencies:
 
-Bash
-pip install pandas numpy scikit-learn imbalanced-learn xgboost shap streamlit plotly matplotlib
+```Bash`
+pip install pandas numpy scikit-learn imbalanced-learn xgboost shap streamlit plotly matplotlib```
 Run the model pipeline (generates .pkl files):
 
-Bash
-python pipeline.py
+```Bash`
+python pipeline.py```
 Launch the Streamlit Dashboard:
 
-Bash
-python -m streamlit run app.py
+```Bash`
+python -m streamlit run app.py```
 Usage Guide
 Historical Filters: Use the sidebar to select specific Machine IDs and filter out high-latency network events to view historical production output and scatter profiles.
 
